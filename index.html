@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type="number" placeholder="number one" id="box1">
+    <input type="number" placeholder="number two" id="box2">
+    <button onclick="addition()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="divide()">/</button>
+    <button  onclick="multiplication()">*</button>
+    
+    <script>
+        function divide() {
+            alert(box1.value / box2.value)
+        }
+        function addition() {
+            alert(Number(box1.value) + Number(box2.value))
+        }
+        function subtract() {
+            alert(box1.value - box2.value)
+        }
+        function multiplication() {
+            alert(box1.value * box2.value)
+        }
+    </script>
+
+</body>
+</html>
